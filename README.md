@@ -30,7 +30,7 @@ DELETE Route
 ➤ Delete or cancel an existing order
 ➤ Access: All users
 
-📄 GET Routes
+GET Routes
 /orders/user/orders/
 ➤ Retrieve all orders made by the currently logged-in user
 ➤ Access: All users
