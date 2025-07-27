@@ -1,6 +1,17 @@
 ## PIZZA DELIVERY API
 This is a RESTful API for a Pizza Delivery service, built using FastAPI, SQLAlchemy, and PostgreSQL. The goal was to simulate a real-world backend service that handles user authentication, order management, and access control using JWT tokens.
 
+## Project Architecture
+FastAPI: The web framework used to define routes and handle requests.
+
+SQLAlchemy: For database modeling and interaction.
+
+PostgreSQL: The relational database for persisting users and orders.
+
+Pydantic: For input/output data validation.
+
+fastapi-jwt-auth: For secure JWT-based authentication and authorization.
+
 
 ## ROUTES TO IMPLEMENT
 POST Routes
