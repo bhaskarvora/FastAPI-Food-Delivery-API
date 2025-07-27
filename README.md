@@ -3,19 +3,55 @@ A RESTful API designed for a pizza delivery service, built using FastAPI, SQLAlc
 
 
 ## ROUTES TO IMPLEMENT
-| METHOD | ROUTE | FUNCTIONALITY |ACCESS|
-| ------- | ----- | ------------- | ------------- |
-| *POST* | ```/auth/signup/``` | _Register new user_| _All users_|
-| *POST* | ```/auth/login/``` | _Login user_|_All users_|
-| *POST* | ```/orders/order/``` | _Place an order_|_All users_|
-| *PUT* | ```/orders/order/update/{order_id}/``` | _Update an order_|_All users_|
-| *PUT* | ```/orders/order/status/{order_id}/``` | _Update order status_|_Superuser_|
-| *DELETE* | ```/orders/order/delete/{order_id}/``` | _Delete/Remove an order_ |_All users_|
-| *GET* | ```/orders/user/orders/``` | _Get user's orders_|_All users_|
-| *GET* | ```/orders/orders/``` | _List all orders made_|_Superuser_|
-| *GET* | ```/orders/orders/{order_id}/``` | _Retrieve an order_|_Superuser_|
-| *GET* | ```/orders/user/order/{order_id}/``` | _Get user's specific order_|
-| *GET* | ```/docs/``` | _View API documentation_|_All users_|
+POST Routes
+/auth/signup/
+➤ Register a new user
+➤ Access: All users
+
+/auth/login/
+➤ Login an existing user
+➤ Access: All users
+
+/orders/order/
+➤ Place a new pizza order
+➤ Access: All users
+
+PUT Routes
+/orders/order/update/{order_id}/
+➤ Update an existing order’s details (e.g., quantity, size)
+➤ Access: All users
+
+/orders/order/status/{order_id}/
+➤ Update the status of an order (e.g., Pending → Delivered)
+➤ Access: Superuser only
+
+DELETE Route
+/orders/order/delete/{order_id}/
+➤ Delete or cancel an existing order
+➤ Access: All users
+
+📄 GET Routes
+/orders/user/orders/
+➤ Retrieve all orders made by the currently logged-in user
+➤ Access: All users
+
+/orders/orders/
+➤ Retrieve all orders from all users (admin view)
+➤ Access: Superuser only
+
+/orders/orders/{order_id}/
+➤ Retrieve a specific order by ID (admin view)
+➤ Access: Superuser only
+
+/orders/user/order/{order_id}/
+➤ Retrieve a specific order placed by the currently logged-in user
+➤ Access: All users
+
+/docs/
+➤ View the API documentation via Swagger UI
+➤ Access: All users
+
+
 
 ## How to run the Project
 - Install Postgreql
