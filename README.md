@@ -83,4 +83,5 @@ engine=create_engine('postgresql://postgres:<username>:<password>@localhost/<db_
 
 
 ## Screenshots
-https://github.com/bhaskarvora/FastAPI-Food-Delivery-API/blob/main/Screenshot%202025-07-29%20124500.png?raw=true
+![API Screenshot](https://github.com/bhaskarvora/FastAPI-Food-Delivery-API/blob/main/Screenshot%202025-07-29%20124500.png?raw=true)
+
