@@ -80,3 +80,7 @@ engine=create_engine('postgresql://postgres:<username>:<password>@localhost/<db_
 - Create your database by running ``` python init_db.py ```
 - Finally run the API
 ``` uvicorn main:app ``
+
+
+## Screenshots
+https://github.com/bhaskarvora/FastAPI-Food-Delivery-API/blob/main/Screenshot%202025-07-29%20124500.png?raw=true
